@@ -1,5 +1,5 @@
 using Pkg: Pkg
-using PKGNAME
+using EnsembleKalmanFilter
 using Test
 using TestReports
 using Aqua
@@ -7,28 +7,28 @@ using Documenter
 
 ts = @testset ReportingTestSet "" begin
     @testset "Code quality (Aqua.jl)" begin
-        Aqua.test_all(PKGNAME; ambiguities=false)
-        Aqua.test_ambiguities(PKGNAME)
+        Aqua.test_all(EnsembleKalmanFilter; ambiguities=false)
+        Aqua.test_ambiguities(EnsembleKalmanFilter)
     end
 
     include("test_pkg_stuff.jl")
 
     # Set metadata for doctests.
-    DocMeta.setdocmeta!(PKGNAME, :DocTestSetup, :(using PKGNAME, Test); recursive=true)
-    if PKGNAME.HAS_NATIVE_EXTENSIONS
+    DocMeta.setdocmeta!(EnsembleKalmanFilter, :DocTestSetup, :(using EnsembleKalmanFilter, Test); recursive=true)
+    if EnsembleKalmanFilter.HAS_NATIVE_EXTENSIONS
         using Random
         DocMeta.setdocmeta!(
-            PKGNAME.get_extension(PKGNAME, :RandomExt),
+            EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt),
             :DocTestSetup,
-            :(using PKGNAME, Test);
+            :(using EnsembleKalmanFilter, Test);
             recursive=true,
         )
     end
 
     # Run doctests.
-    doctest(PKGNAME; manual=true)
-    if PKGNAME.HAS_NATIVE_EXTENSIONS
-        doctest(PKGNAME.get_extension(PKGNAME, :RandomExt); manual=true)
+    doctest(EnsembleKalmanFilter; manual=true)
+    if EnsembleKalmanFilter.HAS_NATIVE_EXTENSIONS
+        doctest(EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt); manual=true)
     end
 
     # Run examples.

@@ -1,27 +1,27 @@
 ```@meta
-CurrentModule = PKGNAME
+CurrentModule = EnsembleKalmanFilter
 ```
 
-# PKGNAME
+# EnsembleKalmanFilter
 
-Documentation for [PKGNAME](https://github.com/gbruer15/PKGNAME.jl).
+Documentation for [EnsembleKalmanFilter](https://github.com/gbruer15/EnsembleKalmanFilter.jl).
 
 
 ```@index
-Modules = [PKGNAME]
+Modules = [EnsembleKalmanFilter]
 ```
 
 ```@autodocs
-Modules = [PKGNAME]
+Modules = [EnsembleKalmanFilter]
 ```
 
 
 # Extensions
 
 ```@index
-Modules = [PKGNAME.get_extension(PKGNAME, :RandomExt)]
+Modules = [EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt)]
 ```
 
 ```@autodocs
-Modules = [PKGNAME.get_extension(PKGNAME, :RandomExt)]
+Modules = [EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt)]
 ```

@@ -1,5 +1,5 @@
-name = "PKGNAME"
-uuid = "da9e779f-cf6d-4bf6-baf7-0ed062534939"
+name = "EnsembleKalmanFilter"
+uuid = "489b957c-0289-4703-8989-7a2007538216"
 authors = ["Grant Bruer gbruer15@gmail.com and contributors"]
 version = "1.0.0-DEV"
 

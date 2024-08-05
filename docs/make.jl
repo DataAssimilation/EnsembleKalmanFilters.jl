@@ -1,7 +1,7 @@
 using Pkg: Pkg
-using PKGNAME
+using EnsembleKalmanFilter
 using Documenter
-using Random # Loads PKGNAME Random extension.
+using Random # Loads EnsembleKalmanFilter Random extension.
 
 using Literate
 
@@ -89,30 +89,30 @@ for (ex, pth) in examples
 end
 
 # Set metadata for doctests.
-DocMeta.setdocmeta!(PKGNAME, :DocTestSetup, :(using PKGNAME, Test); recursive=true)
-if PKGNAME.HAS_NATIVE_EXTENSIONS
+DocMeta.setdocmeta!(EnsembleKalmanFilter, :DocTestSetup, :(using EnsembleKalmanFilter, Test); recursive=true)
+if EnsembleKalmanFilter.HAS_NATIVE_EXTENSIONS
     using Random
     DocMeta.setdocmeta!(
-        PKGNAME.get_extension(PKGNAME, :RandomExt),
+        EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt),
         :DocTestSetup,
-        :(using PKGNAME, Test);
+        :(using EnsembleKalmanFilter, Test);
         recursive=true,
     )
 end
 makedocs(;
-    modules=[PKGNAME, PKGNAME.get_extension(PKGNAME, :RandomExt)],
+    modules=[EnsembleKalmanFilter, EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt)],
     authors="Grant Bruer gbruer15@gmail.com and contributors",
-    sitename="PKGNAME.jl",
+    sitename="EnsembleKalmanFilter.jl",
     source=DOC_STAGE,
     build=DOC_BUILD,
     format=Documenter.HTML(;
-        repolink="https://github.com/gbruer15/PKGNAME.jl",
-        canonical="https://gbruer15.github.io/PKGNAME.jl",
+        repolink="https://github.com/gbruer15/EnsembleKalmanFilter.jl",
+        canonical="https://gbruer15.github.io/EnsembleKalmanFilter.jl",
         edit_link="main",
         assets=String[],
         size_threshold=2 * 2^20,
     ),
-    repo="github.com/gbruer15/PKGNAME.jl",
+    repo="github.com/gbruer15/EnsembleKalmanFilter.jl",
     pages=[
         "Home" => "index.md",
         "Examples" => examples_markdown,

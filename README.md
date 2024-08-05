@@ -1,23 +1,23 @@
-# PKGNAME
+# EnsembleKalmanFilter
 
 | **Documentation**    | [<img src="https://img.shields.io/badge/docs-latest-blue.svg" alt = "doc badge" height="30">][docs-latest-url] |
 |----------------------|--------------------------------------------------|
-| **CI tests**         | [<img src="https://github.com/gbruer15/PKGNAME.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt = "CI badge" height="30">][ci-tests-url] |
-| **Code Coverage**    | [<img src="https://gbruer15.github.io/PKGNAME.jl/coverage/badge.svg" alt = "coverage badge" height="30">][codecov-url] |
+| **CI tests**         | [<img src="https://github.com/gbruer15/EnsembleKalmanFilter.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt = "CI badge" height="30">][ci-tests-url] |
+| **Code Coverage**    | [<img src="https://gbruer15.github.io/EnsembleKalmanFilter.jl/coverage/badge.svg" alt = "coverage badge" height="30">][codecov-url] |
 
-[docs-latest-url]: https://gbruer15.github.io/PKGNAME.jl
-[ci-tests-url]: https://github.com/gbruer15/PKGNAME.jl/actions/workflows/CI.yml?query=branch%3Amain
-[codecov-url]: https://gbruer15.github.io/PKGNAME.jl/coverage/
+[docs-latest-url]: https://gbruer15.github.io/EnsembleKalmanFilter.jl
+[ci-tests-url]: https://github.com/gbruer15/EnsembleKalmanFilter.jl/actions/workflows/CI.yml?query=branch%3Amain
+[codecov-url]: https://gbruer15.github.io/EnsembleKalmanFilter.jl/coverage/
 
 ## Documentation
 
-[Package documentation is here](https://gbruer15.github.io/PKGNAME.jl)
+[Package documentation is here](https://gbruer15.github.io/EnsembleKalmanFilter.jl)
 
 ## Repository Structure[^1]
 
 This repository follows a standard Julia project structure:
 
-- `src/`: Contains the main source code for the project with the entrypoint being `src/PKGNAME.jl`.
+- `src/`: Contains the main source code for the project with the entrypoint being `src/EnsembleKalmanFilter.jl`.
 - `test/`: Includes test files for the project with the entrypoint being `test/runtests.jl`.
 - `docs/`: Houses documentation files.
 - `ci_scripts/`: Contains scripts used for continuous integration.
