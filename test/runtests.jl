@@ -14,7 +14,12 @@ ts = @testset ReportingTestSet "" begin
     include("test_pkg_stuff.jl")
 
     # Set metadata for doctests.
-    DocMeta.setdocmeta!(EnsembleKalmanFilter, :DocTestSetup, :(using EnsembleKalmanFilter, Test); recursive=true)
+    DocMeta.setdocmeta!(
+        EnsembleKalmanFilter,
+        :DocTestSetup,
+        :(using EnsembleKalmanFilter, Test);
+        recursive=true,
+    )
     if EnsembleKalmanFilter.HAS_NATIVE_EXTENSIONS
         using Random
         DocMeta.setdocmeta!(
@@ -28,7 +33,10 @@ ts = @testset ReportingTestSet "" begin
     # Run doctests.
     doctest(EnsembleKalmanFilter; manual=true)
     if EnsembleKalmanFilter.HAS_NATIVE_EXTENSIONS
-        doctest(EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt); manual=true)
+        doctest(
+            EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt);
+            manual=true,
+        )
     end
 
     # Run examples.
