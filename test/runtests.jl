@@ -11,7 +11,7 @@ ts = @testset ReportingTestSet "" begin
         Aqua.test_ambiguities(EnsembleKalmanFilter)
     end
 
-    include("test_pkg_stuff.jl")
+    include("test_assimilate_data.jl")
 
     # Set metadata for doctests.
     DocMeta.setdocmeta!(
@@ -20,24 +20,9 @@ ts = @testset ReportingTestSet "" begin
         :(using EnsembleKalmanFilter, Test);
         recursive=true,
     )
-    if EnsembleKalmanFilter.HAS_NATIVE_EXTENSIONS
-        using Random
-        DocMeta.setdocmeta!(
-            EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt),
-            :DocTestSetup,
-            :(using EnsembleKalmanFilter, Test);
-            recursive=true,
-        )
-    end
 
     # Run doctests.
     doctest(EnsembleKalmanFilter; manual=true)
-    if EnsembleKalmanFilter.HAS_NATIVE_EXTENSIONS
-        doctest(
-            EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt);
-            manual=true,
-        )
-    end
 
     # Run examples.
     examples_dir = joinpath(@__DIR__, "..", "examples")

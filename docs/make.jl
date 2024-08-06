@@ -92,15 +92,6 @@ end
 DocMeta.setdocmeta!(
     EnsembleKalmanFilter, :DocTestSetup, :(using EnsembleKalmanFilter, Test); recursive=true
 )
-if EnsembleKalmanFilter.HAS_NATIVE_EXTENSIONS
-    using Random
-    DocMeta.setdocmeta!(
-        EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt),
-        :DocTestSetup,
-        :(using EnsembleKalmanFilter, Test);
-        recursive=true,
-    )
-end
 makedocs(;
     modules=[
         EnsembleKalmanFilter,

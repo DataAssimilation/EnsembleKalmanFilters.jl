@@ -15,13 +15,3 @@ Modules = [EnsembleKalmanFilter]
 Modules = [EnsembleKalmanFilter]
 ```
 
-
-# Extensions
-
-```@index
-Modules = [EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt)]
-```
-
-```@autodocs
-Modules = [EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt)]
-```

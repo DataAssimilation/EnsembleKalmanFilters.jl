@@ -1,31 +1,10 @@
 
 """
-This module provides the [`greeting`](@ref) function for generating greetings.
-
-# Examples
-
-```jldoctest
-julia> greeting("Grant")
-"Hello Grant"
-
-```
+This module implements the ensemble Kalman filter.
 """
 module EnsembleKalmanFilter
 
-include("pkg_stuff.jl")
-
-using PackageExtensionCompat
-function __init__()
-    @require_extensions
-end
-
-export HAS_NATIVE_EXTENSIONS
-HAS_NATIVE_EXTENSIONS = PackageExtensionCompat.HAS_NATIVE_EXTENSIONS
-
-if HAS_NATIVE_EXTENSIONS
-    get_extension = Base.get_extension
-else
-    get_extension(mod, sym) = getfield(mod, sym)
-end
+include("EnKF.jl")
+include("assimilate_data.jl")
 
 end # module EnsembleKalmanFilter
