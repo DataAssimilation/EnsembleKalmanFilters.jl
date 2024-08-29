@@ -1,2 +1,2 @@
 [deps]
-EnsembleKalmanFilter = "489b957c-0289-4703-8989-7a2007538216"
+EnsembleKalmanFilters = "489b957c-0289-4703-8989-7a2007538216"

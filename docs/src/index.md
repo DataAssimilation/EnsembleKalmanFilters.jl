@@ -1,17 +1,17 @@
 ```@meta
-CurrentModule = EnsembleKalmanFilter
+CurrentModule = EnsembleKalmanFilters
 ```
 
-# EnsembleKalmanFilter
+# EnsembleKalmanFilters
 
-Documentation for [EnsembleKalmanFilter](https://github.com/gbruer15/EnsembleKalmanFilter.jl).
+Documentation for [EnsembleKalmanFilters](https://github.com/gbruer15/EnsembleKalmanFilters.jl).
 
 
 ```@index
-Modules = [EnsembleKalmanFilter]
+Modules = [EnsembleKalmanFilters]
 ```
 
 ```@autodocs
-Modules = [EnsembleKalmanFilter]
+Modules = [EnsembleKalmanFilters]
 ```
 

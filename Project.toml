@@ -1,4 +1,4 @@
-name = "EnsembleKalmanFilter"
+name = "EnsembleKalmanFilters"
 uuid = "489b957c-0289-4703-8989-7a2007538216"
 authors = ["Grant Bruer gbruer15@gmail.com and contributors"]
 version = "1.0.0-DEV"

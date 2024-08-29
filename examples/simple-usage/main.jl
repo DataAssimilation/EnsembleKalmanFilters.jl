@@ -1,8 +1,8 @@
 # # Description
-# This example shows a simple use case for EnsembleKalmanFilter.
+# This example shows a simple use case for EnsembleKalmanFilters.
 #
 # First, we import the necessary packages.
-using EnsembleKalmanFilter
+using EnsembleKalmanFilters
 
 # Then, we make a filter object holding the hyperparameters for the EnKF.
 R = reshape([2.0], (1, 1))

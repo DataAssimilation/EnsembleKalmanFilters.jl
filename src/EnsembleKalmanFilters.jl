@@ -2,9 +2,9 @@
 """
 This module implements the ensemble Kalman filter.
 """
-module EnsembleKalmanFilter
+module EnsembleKalmanFilters
 
 include("EnKF.jl")
 include("assimilate_data.jl")
 
-end # module EnsembleKalmanFilter
+end # module EnsembleKalmanFilters

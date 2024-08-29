@@ -1,5 +1,5 @@
 using Pkg: Pkg
-using EnsembleKalmanFilter
+using EnsembleKalmanFilters
 using Test
 using TestReports
 using Aqua
@@ -7,22 +7,22 @@ using Documenter
 
 ts = @testset ReportingTestSet "" begin
     @testset "Code quality (Aqua.jl)" begin
-        Aqua.test_all(EnsembleKalmanFilter; ambiguities=false)
-        Aqua.test_ambiguities(EnsembleKalmanFilter)
+        Aqua.test_all(EnsembleKalmanFilters; ambiguities=false)
+        Aqua.test_ambiguities(EnsembleKalmanFilters)
     end
 
     include("test_assimilate_data.jl")
 
     # Set metadata for doctests.
     DocMeta.setdocmeta!(
-        EnsembleKalmanFilter,
+        EnsembleKalmanFilters,
         :DocTestSetup,
-        :(using EnsembleKalmanFilter, Test);
+        :(using EnsembleKalmanFilters, Test);
         recursive=true,
     )
 
     # Run doctests.
-    doctest(EnsembleKalmanFilter; manual=true)
+    doctest(EnsembleKalmanFilters; manual=true)
 
     # Run examples.
     examples_dir = joinpath(@__DIR__, "..", "examples")

@@ -1,7 +1,7 @@
 using Pkg: Pkg
-using EnsembleKalmanFilter
+using EnsembleKalmanFilters
 using Documenter
-using Random # Loads EnsembleKalmanFilter Random extension.
+using Random # Loads EnsembleKalmanFilters Random extension.
 
 using Literate
 
@@ -90,25 +90,25 @@ end
 
 # Set metadata for doctests.
 DocMeta.setdocmeta!(
-    EnsembleKalmanFilter, :DocTestSetup, :(using EnsembleKalmanFilter, Test); recursive=true
+    EnsembleKalmanFilters, :DocTestSetup, :(using EnsembleKalmanFilters, Test); recursive=true
 )
 makedocs(;
     modules=[
-        EnsembleKalmanFilter,
-        EnsembleKalmanFilter.get_extension(EnsembleKalmanFilter, :RandomExt),
+        EnsembleKalmanFilters,
+        EnsembleKalmanFilters.get_extension(EnsembleKalmanFilters, :RandomExt),
     ],
     authors="Grant Bruer gbruer15@gmail.com and contributors",
-    sitename="EnsembleKalmanFilter.jl",
+    sitename="EnsembleKalmanFilters.jl",
     source=DOC_STAGE,
     build=DOC_BUILD,
     format=Documenter.HTML(;
-        repolink="https://github.com/gbruer15/EnsembleKalmanFilter.jl",
-        canonical="https://gbruer15.github.io/EnsembleKalmanFilter.jl",
+        repolink="https://github.com/gbruer15/EnsembleKalmanFilters.jl",
+        canonical="https://gbruer15.github.io/EnsembleKalmanFilters.jl",
         edit_link="main",
         assets=String[],
         size_threshold=2 * 2^20,
     ),
-    repo="github.com/gbruer15/EnsembleKalmanFilter.jl",
+    repo="github.com/gbruer15/EnsembleKalmanFilters.jl",
     pages=[
         "Home" => "index.md",
         "Examples" => examples_markdown,
