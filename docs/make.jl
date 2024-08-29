@@ -102,13 +102,13 @@ makedocs(;
     source=DOC_STAGE,
     build=DOC_BUILD,
     format=Documenter.HTML(;
-        repolink="https://github.com/gbruer15/EnsembleKalmanFilters.jl",
-        canonical="https://gbruer15.github.io/EnsembleKalmanFilters.jl",
+        repolink="https://github.com/tmp398243/tmp45742.jl",
+        canonical="https://tmp398243.github.io/tmp45742.jl",
         edit_link="main",
         assets=String[],
         size_threshold=2 * 2^20,
     ),
-    repo="github.com/gbruer15/EnsembleKalmanFilters.jl",
+    repo="github.com/tmp398243/tmp45742.jl",
     pages=[
         "Home" => "index.md",
         "Examples" => examples_markdown,
