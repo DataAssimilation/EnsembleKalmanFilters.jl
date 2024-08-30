@@ -83,6 +83,9 @@ jobs:
   formatter:
     name: Run JuliaFormatter and create pull request
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     if: ${{ github.event_name != 'pull_request' || !github.event.pull_request.isDraft}}
     steps:
     - name: Set inputs for push or pull request event
