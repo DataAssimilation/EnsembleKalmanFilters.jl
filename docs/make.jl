@@ -89,7 +89,12 @@ for (ex, pth) in examples
 end
 
 # Set metadata for doctests.
-DocMeta.setdocmeta!(EnsembleKalmanFilters, :DocTestSetup, :(using EnsembleKalmanFilters, Test); recursive=true)
+DocMeta.setdocmeta!(
+    EnsembleKalmanFilters,
+    :DocTestSetup,
+    :(using EnsembleKalmanFilters, Test);
+    recursive=true,
+)
 if EnsembleKalmanFilters.HAS_NATIVE_EXTENSIONS
     using Random
     DocMeta.setdocmeta!(
@@ -100,7 +105,10 @@ if EnsembleKalmanFilters.HAS_NATIVE_EXTENSIONS
     )
 end
 makedocs(;
-    modules=[EnsembleKalmanFilters, EnsembleKalmanFilters.get_extension(EnsembleKalmanFilters, :RandomExt)],
+    modules=[
+        EnsembleKalmanFilters,
+        EnsembleKalmanFilters.get_extension(EnsembleKalmanFilters, :RandomExt),
+    ],
     authors="Grant Bruer gbruer15@gmail.com and contributors",
     sitename="EnsembleKalmanFilters.jl",
     source=DOC_STAGE,
