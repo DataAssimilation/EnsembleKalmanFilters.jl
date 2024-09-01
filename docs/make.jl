@@ -89,29 +89,30 @@ for (ex, pth) in examples
 end
 
 # Set metadata for doctests.
-DocMeta.setdocmeta!(
-    EnsembleKalmanFilters,
-    :DocTestSetup,
-    :(using EnsembleKalmanFilters, Test);
-    recursive=true,
-)
-makedocs(;
-    modules=[
-        EnsembleKalmanFilters,
+DocMeta.setdocmeta!(EnsembleKalmanFilters, :DocTestSetup, :(using EnsembleKalmanFilters, Test); recursive=true)
+if EnsembleKalmanFilters.HAS_NATIVE_EXTENSIONS
+    using Random
+    DocMeta.setdocmeta!(
         EnsembleKalmanFilters.get_extension(EnsembleKalmanFilters, :RandomExt),
-    ],
+        :DocTestSetup,
+        :(using EnsembleKalmanFilters, Test);
+        recursive=true,
+    )
+end
+makedocs(;
+    modules=[EnsembleKalmanFilters, EnsembleKalmanFilters.get_extension(EnsembleKalmanFilters, :RandomExt)],
     authors="Grant Bruer gbruer15@gmail.com and contributors",
     sitename="EnsembleKalmanFilters.jl",
     source=DOC_STAGE,
     build=DOC_BUILD,
     format=Documenter.HTML(;
-        repolink="https://github.com/tmp398243/tmp45742.jl",
-        canonical="https://tmp398243.github.io/tmp45742.jl",
+        repolink="https://github.com/tmp398243/tmp45742",
+        canonical="https://tmp398243.github.io/tmp45742",
         edit_link="main",
         assets=String[],
         size_threshold=2 * 2^20,
     ),
-    repo="github.com/tmp398243/tmp45742.jl",
+    repo="github.com/tmp398243/tmp45742",
     pages=[
         "Home" => "index.md",
         "Examples" => examples_markdown,
