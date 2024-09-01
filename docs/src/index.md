@@ -4,7 +4,7 @@ CurrentModule = EnsembleKalmanFilters
 
 # EnsembleKalmanFilters
 
-Documentation for [EnsembleKalmanFilters](https://github.com/tmp398243/tmp45742.jl).
+Documentation for [EnsembleKalmanFilters](https://github.com/tmp398243/tmp45742).
 
 
 ```@index
@@ -15,3 +15,13 @@ Modules = [EnsembleKalmanFilters]
 Modules = [EnsembleKalmanFilters]
 ```
 
+
+# Extensions
+
+```@index
+Modules = [EnsembleKalmanFilters.get_extension(EnsembleKalmanFilters, :RandomExt)]
+```
+
+```@autodocs
+Modules = [EnsembleKalmanFilters.get_extension(EnsembleKalmanFilters, :RandomExt)]
+```
