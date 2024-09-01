@@ -90,7 +90,10 @@ end
 
 # Set metadata for doctests.
 DocMeta.setdocmeta!(
-    EnsembleKalmanFilters, :DocTestSetup, :(using EnsembleKalmanFilters, Test); recursive=true
+    EnsembleKalmanFilters,
+    :DocTestSetup,
+    :(using EnsembleKalmanFilters, Test);
+    recursive=true,
 )
 makedocs(;
     modules=[
