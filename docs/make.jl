@@ -98,7 +98,6 @@ DocMeta.setdocmeta!(
 makedocs(;
     modules=[
         EnsembleKalmanFilters,
-        EnsembleKalmanFilters.get_extension(EnsembleKalmanFilters, :RandomExt),
     ],
     authors="Grant Bruer gbruer15@gmail.com and contributors",
     sitename="EnsembleKalmanFilters.jl",
