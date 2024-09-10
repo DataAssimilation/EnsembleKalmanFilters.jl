@@ -96,9 +96,7 @@ DocMeta.setdocmeta!(
 )
 
 makedocs(;
-    modules=[
-        EnsembleKalmanFilters,
-    ],
+    modules=[EnsembleKalmanFilters],
     authors="Grant Bruer gbruer15@gmail.com and contributors",
     sitename="EnsembleKalmanFilters.jl",
     source=DOC_STAGE,
