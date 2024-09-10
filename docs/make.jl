@@ -1,7 +1,6 @@
 using Pkg: Pkg
 using EnsembleKalmanFilters
 using Documenter
-using Random # Loads EnsembleKalmanFilters Random extension.
 
 using Literate
 
@@ -95,15 +94,7 @@ DocMeta.setdocmeta!(
     :(using EnsembleKalmanFilters, Test);
     recursive=true,
 )
-if EnsembleKalmanFilters.HAS_NATIVE_EXTENSIONS
-    using Random
-    DocMeta.setdocmeta!(
-        EnsembleKalmanFilters.get_extension(EnsembleKalmanFilters, :RandomExt),
-        :DocTestSetup,
-        :(using EnsembleKalmanFilters, Test);
-        recursive=true,
-    )
-end
+
 makedocs(;
     modules=[
         EnsembleKalmanFilters,
