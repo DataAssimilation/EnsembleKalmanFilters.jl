@@ -89,6 +89,6 @@ end
 
 get_noise_covariance_operator(n, R) = joMatrix(R)
 get_noise_covariance_operator(n, R::joMatrix) = R
-function get_noise_covariance_operator(n, R::T) where T <: Number
-    joMatrix(Diagonal(fill(R, n)))
+function get_noise_covariance_operator(n, R::T) where {T<:Number}
+    return joMatrix(Diagonal(fill(R, n)))
 end
