@@ -50,7 +50,7 @@ function assimilate_data(
 
     dY_op = joMatrix(dY)
     dX_op = joMatrix(dX)
-    R_op = joMatrix(filter.R)
+    R_op = get_noise_covariance_operator(ny, filter.R)
 
     ## dX and dY are typically divided by sqrt(N - 1), but I prefer moving that to R.
     ##   (dX dY' / a) (dY dY' / a + R)^{-1}
@@ -85,4 +85,10 @@ function assimilate_data(
     end
     X .+= dX * dY' * Y_update
     return X
+end
+
+get_noise_covariance_operator(n, R) = joMatrix(R)
+get_noise_covariance_operator(n, R::joMatrix) = R
+function get_noise_covariance_operator(n, R::T) where T <: Number
+    joMatrix(Diagonal(fill(R, n)))
 end
