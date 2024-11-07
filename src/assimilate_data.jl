@@ -46,6 +46,7 @@ function assimilate_data(
     nx, N = size(X)
     ny = size(Y, 1)
 
+    y_obs = Float64.(y_obs)
     pred_err = y_obs .- Y_noisy
 
     dY_op = joMatrix(dY)
