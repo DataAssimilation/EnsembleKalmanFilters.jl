@@ -11,7 +11,7 @@
 [docs-build-url]: https://github.com/tmp398243/tmp45742/actions/workflows/docs.yaml?query=branch%3Amain
 [codecov-url]: https://tmp398243.github.io/tmp45742/coverage/
 
-This package exists as a template for quickly getting a Julia package set up with continuous integration and documentation support. If you have suggestions for making this better, you are very welcome to make an issue or pull request to discuss it.
+This package implements the stochastic ensemble Kalman filter.
 
 ## Repository Structure[^1]
 

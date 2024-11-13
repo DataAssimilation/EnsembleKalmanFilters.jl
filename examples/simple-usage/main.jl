@@ -17,6 +17,6 @@ prior_state = [1.0 -1.0]
 prior_obs_clean = [1.0 -1.0]
 prior_obs_noisy = [1.0 -1.0]
 
-# Then we assimialte an observation. Here, we just pick an arbitrary one.
+# Then we assimilate an observation. Here, we just pick an arbitrary one.
 y_obs = [0.0]
 posterior = assimilate_data(filter, prior_state, prior_obs_clean, prior_obs_noisy, y_obs)
