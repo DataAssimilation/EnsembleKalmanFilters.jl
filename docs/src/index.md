@@ -4,7 +4,7 @@ CurrentModule = EnsembleKalmanFilters
 
 # EnsembleKalmanFilters
 
-Documentation for [EnsembleKalmanFilters](https://github.com/tmp398243/tmp45742).
+Documentation for [EnsembleKalmanFilters](https://github.com/DataAssimilation/EnsembleKalmanFilters).
 
 
 ```@index

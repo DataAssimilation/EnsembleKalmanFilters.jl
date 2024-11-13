@@ -102,13 +102,13 @@ makedocs(;
     source=DOC_STAGE,
     build=DOC_BUILD,
     format=Documenter.HTML(;
-        repolink="https://github.com/tmp398243/tmp45742",
-        canonical="https://tmp398243.github.io/tmp45742",
+        repolink="https://github.com/DataAssimilation/EnsembleKalmanFilters",
+        canonical="https://DataAssimilation.github.io/EnsembleKalmanFilters",
         edit_link="main",
         assets=String[],
         size_threshold=2 * 2^20,
     ),
-    repo="github.com/tmp398243/tmp45742",
+    repo="github.com/DataAssimilation/EnsembleKalmanFilters",
     pages=[
         "Home" => "index.md",
         "Examples" => examples_markdown,

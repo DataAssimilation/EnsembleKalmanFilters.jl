@@ -3,13 +3,13 @@
 |  |     |
 |--|:---:|
 | [**Documentation**][docs-latest-url]    | [<img src="https://img.shields.io/badge/docs-latest-blue.svg" alt = "doc badge" height="30">][docs-latest-url] |
-| [**CI tests**][checks-url]        | [<img src="https://github.com/tmp398243/tmp45742/actions/workflows/checks.yaml/badge.svg?branch=main" alt = "CI badge" height="30">][checks-url] |
-| [**Code Coverage**][codecov-url]    | [<img src="https://tmp398243.github.io/tmp45742/coverage/badge.svg" alt = "coverage badge" height="30">][codecov-url] |
+| [**CI tests**][checks-url]        | [<img src="https://github.com/DataAssimilation/EnsembleKalmanFilters/actions/workflows/checks.yaml/badge.svg?branch=main" alt = "CI badge" height="30">][checks-url] |
+| [**Code Coverage**][codecov-url]    | [<img src="https://DataAssimilation.github.io/EnsembleKalmanFilters/coverage/badge.svg" alt = "coverage badge" height="30">][codecov-url] |
 
-[docs-latest-url]: https://tmp398243.github.io/tmp45742
-[checks-url]: https://github.com/tmp398243/tmp45742/actions/workflows/checks.yaml?query=branch%3Amain
-[docs-build-url]: https://github.com/tmp398243/tmp45742/actions/workflows/docs.yaml?query=branch%3Amain
-[codecov-url]: https://tmp398243.github.io/tmp45742/coverage/
+[docs-latest-url]: https://DataAssimilation.github.io/EnsembleKalmanFilters
+[checks-url]: https://github.com/DataAssimilation/EnsembleKalmanFilters/actions/workflows/checks.yaml?query=branch%3Amain
+[docs-build-url]: https://github.com/DataAssimilation/EnsembleKalmanFilters/actions/workflows/docs.yaml?query=branch%3Amain
+[codecov-url]: https://DataAssimilation.github.io/EnsembleKalmanFilters/coverage/
 
 This package implements the stochastic ensemble Kalman filter.
 
@@ -17,7 +17,7 @@ This package implements the stochastic ensemble Kalman filter.
 
 This repository follows a standard Julia project structure:
 
-- `src/`: Contains the main source code for the project with the entrypoint being `src/EnsembleKalmanFilters.jl`.
+- `src/`: Contains the main source code for the project with the entrypoint being `src/tmp45742.jl`.
 - `test/`: Includes test files for the project with the entrypoint being `test/runtests.jl`.
 - `docs/`: Houses documentation files.
 - `ci_scripts/`: Contains scripts used for continuous integration.
