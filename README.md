@@ -1,15 +1,15 @@
-# EnsembleKalmanFilters
+# EnsembleKalmanFilters.jl
 
 |  |     |
 |--|:---:|
 | [**Documentation**][docs-latest-url]    | [<img src="https://img.shields.io/badge/docs-latest-blue.svg" alt = "doc badge" height="30">][docs-latest-url] |
-| [**CI tests**][checks-url]        | [<img src="https://github.com/DataAssimilation/EnsembleKalmanFilters/actions/workflows/checks.yaml/badge.svg?branch=main" alt = "CI badge" height="30">][checks-url] |
-| [**Code Coverage**][codecov-url]    | [<img src="https://DataAssimilation.github.io/EnsembleKalmanFilters/coverage/badge.svg" alt = "coverage badge" height="30">][codecov-url] |
+| [**CI tests**][checks-url]        | [<img src="https://github.com/DataAssimilation/EnsembleKalmanFilters.jl/actions/workflows/checks.yaml/badge.svg?branch=main" alt = "CI badge" height="30">][checks-url] |
+| [**Code Coverage**][codecov-url]    | [<img src="https://DataAssimilation.github.io/EnsembleKalmanFilters.jl/coverage/badge.svg" alt = "coverage badge" height="30">][codecov-url] |
 
-[docs-latest-url]: https://DataAssimilation.github.io/EnsembleKalmanFilters
-[checks-url]: https://github.com/DataAssimilation/EnsembleKalmanFilters/actions/workflows/checks.yaml?query=branch%3Amain
-[docs-build-url]: https://github.com/DataAssimilation/EnsembleKalmanFilters/actions/workflows/docs.yaml?query=branch%3Amain
-[codecov-url]: https://DataAssimilation.github.io/EnsembleKalmanFilters/coverage/
+[docs-latest-url]: https://DataAssimilation.github.io/EnsembleKalmanFilters.jl
+[checks-url]: https://github.com/DataAssimilation/EnsembleKalmanFilters.jl/actions/workflows/checks.yaml?query=branch%3Amain
+[docs-build-url]: https://github.com/DataAssimilation/EnsembleKalmanFilters.jl/actions/workflows/docs.yaml?query=branch%3Amain
+[codecov-url]: https://DataAssimilation.github.io/EnsembleKalmanFilters.jl/coverage/
 
 This package implements the stochastic ensemble Kalman filter.
 
