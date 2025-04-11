@@ -13,7 +13,6 @@ function assimilate_data(
     y_obs::AbstractArray,
     log_data=nothing,
 )
-    @assert !filter.include_noise_in_y_covariance
     return assimilate_data(filter, prior_state, prior_obs, prior_obs, y_obs, log_data)
 end
 
