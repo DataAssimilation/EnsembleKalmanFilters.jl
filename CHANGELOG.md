@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- `assimilate_data` now has support for scalar state and observations.
+
 ### Changed
 
 - Fixed bug with version of `assimilate_data` that only takes the noisy observations.
