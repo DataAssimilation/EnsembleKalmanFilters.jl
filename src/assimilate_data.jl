@@ -10,9 +10,10 @@ function assimilate_data(
     filter::EnKF,
     prior_state::EnsembleType,
     prior_obs::EnsembleType,
-    y_obs,
+    y_obs::AbstractArray,
     log_data=nothing,
 )
+    @assert !filter.include_noise_in_y_covariance
     return assimilate_data(filter, prior_state, prior_obs, prior_obs, y_obs, log_data)
 end
 
@@ -21,7 +22,7 @@ function assimilate_data(
     prior_state::EnsembleType,
     prior_obs_clean::EnsembleType,
     prior_obs_noisy::EnsembleType,
-    y_obs,
+    y_obs::AbstractArray,
     log_data=nothing,
 )
     X = Float64.(prior_state)
