@@ -25,9 +25,7 @@
     @test posterior[1] == 0.5
 
     # Should work the same if only the noisy data is passed.
-    posterior2 = assimilate_data(
-        filter, prior_state, prior_obs_noisy, y_obs
-    )
+    posterior2 = assimilate_data(filter, prior_state, prior_obs_noisy, y_obs)
     @test posterior[1] == -posterior[2]
     @test posterior[1] == 0.5
 end
