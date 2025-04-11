@@ -11,7 +11,9 @@ ts = @testset ReportingTestSet "" begin
         Aqua.test_ambiguities(EnsembleKalmanFilters)
     end
 
-    include("test_assimilate_data.jl")
+    @testset "Unit tests" begin
+        include("test_assimilate_data.jl")
+    end
 
     # Set metadata for doctests.
     DocMeta.setdocmeta!(

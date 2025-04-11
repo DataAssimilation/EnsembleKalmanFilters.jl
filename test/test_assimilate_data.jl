@@ -28,4 +28,19 @@
     posterior2 = assimilate_data(filter, prior_state, prior_obs_noisy, y_obs)
     @test posterior[1] == -posterior[2]
     @test posterior[1] == 0.5
+
+
+    # Should work the same if y_obs is passed as a scalar.
+    y_obs = 0.0
+    posterior2 = assimilate_data(filter, prior_state, prior_obs_noisy, y_obs)
+    @test posterior[1] == -posterior[2]
+    @test posterior[1] == 0.5
+
+
+    # Should work the same if ensembles are passed as vectors instead of matrices.
+    prior_state = [1.0, -1.0]
+    prior_obs_noisy = [1.0, -1.0]
+    posterior2 = assimilate_data(filter, prior_state, prior_obs_noisy, y_obs)
+    @test posterior[1] == -posterior[2]
+    @test posterior[1] == 0.5
 end
