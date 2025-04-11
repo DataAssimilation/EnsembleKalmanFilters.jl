@@ -34,13 +34,15 @@ function assimilate_data(
     T3<:AbstractArray,
     Ty<:Union{<:AbstractArray,<:Number},
 }
+    N = size(prior_state)
     prior_state = _ensure_2d(prior_state)
     prior_obs_clean = _ensure_2d(prior_obs_clean)
     prior_obs_noisy = _ensure_2d(prior_obs_noisy)
     y_obs = _ensure_1d(y_obs)
-    return assimilate_data(
+    posterior = assimilate_data(
         filter, prior_state, prior_obs_clean, prior_obs_noisy, y_obs, log_data
     )
+    return reshape(posterior, N)
 end
 
 function assimilate_data(
